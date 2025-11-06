@@ -40,9 +40,28 @@ export interface DockerBuildOptions {
   target?: string;
 
   /**
-   * List of images to use for cache
+   * Use an external cache source for a build
+   *
+   * @see https://docs.docker.com/reference/cli/docker/buildx/build/#cache-from
+   *
    */
   cacheFrom?: string[];
+
+  /**
+   * Export build cache to an external cache destination
+   *
+   * @see https://docs.docker.com/reference/cli/docker/buildx/build/#cache-to
+   *
+   */
+  cacheTo?: string[];
+
+  /**
+   * Additional options to pass to the Docker build command. This serves as an escape hatch for any additional options that are not supported by the other properties.
+   *
+   * @see https://docs.docker.com/reference/cli/docker/buildx/build/#options
+   *
+   */
+  options?: string[];
 }
 
 export interface ImageRegistry {
@@ -170,7 +189,7 @@ export const Image = Resource(
       const buildOptions: Record<string, string> = props.build?.args || {};
 
       // Add platform if specified
-      let buildArgs = ["build", "-t", imageRef];
+      const buildArgs = ["build", "-t", imageRef];
 
       if (props.build?.platform) {
         buildArgs.push("--platform", props.build.platform);
@@ -188,9 +207,21 @@ export const Image = Resource(
         }
       }
 
+      // Add cache destinations if specified
+      if (props.build?.cacheTo && props.build.cacheTo.length > 0) {
+        for (const cacheTarget of props.build.cacheTo) {
+          buildArgs.push("--cache-to", cacheTarget);
+        }
+      }
+
       // Add build arguments
       for (const [key, value] of Object.entries(buildOptions)) {
         buildArgs.push("--build-arg", `${key}=${value}`);
+      }
+
+      // Add build options if specified
+      if (props.build?.options && props.build.options.length > 0) {
+        buildArgs.push(...props.build.options);
       }
 
       buildArgs.push("-f", dockerfile);
