@@ -1,3 +1,17 @@
+## v0.77.1
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **cloudflare**:
+  - Add jurisdiction property to d1 &nbsp;-&nbsp; by **Michael K** in https://github.com/alchemy-run/alchemy/issues/1201 [<samp>(cd49a)</samp>](https://github.com/alchemy-run/alchemy/commit/cd49ac6b)
+  - Support pre-built Images for Containers &nbsp;-&nbsp; by **Sam Goodwin** in https://github.com/alchemy-run/alchemy/issues/1199 [<samp>(966d8)</samp>](https://github.com/alchemy-run/alchemy/commit/966d8553)
+- **docker**:
+  - Add build.cacheTo and build.options escape hatch to docker image &nbsp;-&nbsp; by **Erik Müller** in https://github.com/alchemy-run/alchemy/issues/1198 [<samp>(568fa)</samp>](https://github.com/alchemy-run/alchemy/commit/568fa554)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.77.0...v0.77.1)
+
+---
+
 ## v0.77.0
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
