@@ -1,3 +1,13 @@
+## v0.77.3
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **cli**: Do not import undici into CLI &nbsp;-&nbsp; by **Sam Goodwin** in https://github.com/alchemy-run/alchemy/issues/1205 [<samp>(f8f15)</samp>](https://github.com/alchemy-run/alchemy/commit/f8f15626)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.77.2...v0.77.3)
+
+---
+
 ## v0.77.2
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
