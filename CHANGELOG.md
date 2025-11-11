@@ -1,3 +1,13 @@
+## v0.77.4
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **cloudflare**: Fix d1 jursidiction &nbsp;-&nbsp; by **Michael K** in https://github.com/alchemy-run/alchemy/issues/1206 [<samp>(12875)</samp>](https://github.com/alchemy-run/alchemy/commit/128757e6)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.77.3...v0.77.4)
+
+---
+
 ## v0.77.3
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
