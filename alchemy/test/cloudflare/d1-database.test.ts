@@ -868,10 +868,9 @@ describe("D1 Database Resource", async () => {
       expect(euD1.name).toEqual(euD1Name);
       expect(euD1.jurisdiction).toEqual("eu");
 
-      const gotD1 = await getDatabase(api, euD1Name, {
-        jurisdiction: "eu",
-      });
+      const gotD1 = await getDatabase(api, euD1Name);
       expect(gotD1.result.name).toEqual(euD1Name);
+      expect(gotD1.result.jurisdiction).toEqual("eu");
     } finally {
       await alchemy.destroy(scope);
       if (euD1) {

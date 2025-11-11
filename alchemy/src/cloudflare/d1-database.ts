@@ -386,6 +386,12 @@ const _D1Database = Resource(
           `Cannot update primaryLocationHint from '${this.output.primaryLocationHint}' to '${props.primaryLocationHint}' after database creation.`,
         );
       }
+      if (
+        props.jurisdiction &&
+        props.jurisdiction !== this.output?.jurisdiction
+      ) {
+        return this.replace();
+      }
       // Update the database with new properties
       dbData = await updateDatabase(api, this.output.id, props);
     } else {
@@ -445,6 +451,7 @@ interface CloudflareD1Response {
     read_replication?: {
       mode: "auto" | "disabled";
     };
+    jurisdiction?: string;
   };
   success: boolean;
   errors: Array<{ code: number; message: string }>;
@@ -462,6 +469,7 @@ export async function createDatabase(
   // Create new D1 database
   const createPayload: any = {
     name: databaseName,
+    jurisdiction: props.jurisdiction,
   };
 
   if (props.primaryLocationHint) {
