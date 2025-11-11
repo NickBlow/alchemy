@@ -430,7 +430,7 @@ const _D1Database = Resource(
       type: "d1",
       id: dbData.result.uuid!,
       name: databaseName,
-      readReplication: dbData.result.read_replication,
+      readReplication: props.readReplication,
       primaryLocationHint: props.primaryLocationHint,
       dev,
       migrationsDir: props.migrationsDir,

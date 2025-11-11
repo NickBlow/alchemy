@@ -19,7 +19,7 @@ import {
   getAppliedMigrations,
 } from "../../src/cloudflare/d1-migrations.ts";
 import { Worker } from "../../src/cloudflare/worker.ts";
-import { BRANCH_PREFIX } from "../util.ts";
+import { BRANCH_PREFIX, waitFor } from "../util.ts";
 
 import { destroy } from "../../src/destroy.ts";
 import "../../src/test/vitest.ts";
@@ -112,8 +112,15 @@ describe("D1 Database Resource", async () => {
       );
       expect(getResponse.ok).toBe(true);
 
-      const dbData: any = await getResponse.json();
-      expect(dbData.result.read_replication?.mode).toEqual("auto");
+      await waitFor(
+        async () =>
+          (
+            await api.get(
+              `/accounts/${api.accountId}/d1/database/${database.id}`,
+            )
+          ).json(),
+        (dbData: any) => dbData.result.read_replication?.mode === "auto",
+      );
     } finally {
       await alchemy.destroy(scope);
     }
