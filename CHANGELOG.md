@@ -1,3 +1,13 @@
+## v0.77.2
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **cloudflare**: Use .ts suffix in bucket-custom-domain.ts &nbsp;-&nbsp; by **Sam Goodwin** [<samp>(977c2)</samp>](https://github.com/alchemy-run/alchemy/commit/977c2200)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.77.1...v0.77.2)
+
+---
+
 ## v0.77.1
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
