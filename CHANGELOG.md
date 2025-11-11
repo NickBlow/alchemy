@@ -1,3 +1,13 @@
+## v0.77.5
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **cloudflare**: Error if D1 jurisdiction changes &nbsp;-&nbsp; by **Sam Goodwin** [<samp>(4e116)</samp>](https://github.com/alchemy-run/alchemy/commit/4e11613e)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.77.4...v0.77.5)
+
+---
+
 ## v0.77.4
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
