@@ -1,3 +1,26 @@
+## v0.78.0
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **cli**:
+  - Use r2 instead of node:fs in cloudflare tanstack template &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1208 [<samp>(100e6)</samp>](https://github.com/alchemy-run/alchemy/commit/100e6a67)
+  - Env file handled incorrectly with pnpm &nbsp;-&nbsp; by **John Royal** and **Sam Goodwin** in https://github.com/alchemy-run/alchemy/issues/1204 [<samp>(adf98)</samp>](https://github.com/alchemy-run/alchemy/commit/adf98d11)
+- **cloudflare**:
+  - Include ".sql": "text" loader for workers by default &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1211 [<samp>(cc86a)</samp>](https://github.com/alchemy-run/alchemy/commit/cc86a2b0)
+  - Disable path validation during astro check &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1203 [<samp>(96e30)</samp>](https://github.com/alchemy-run/alchemy/commit/96e30eac)
+  - Add missing oauth scopes and correct descriptions &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1212 [<samp>(163bd)</samp>](https://github.com/alchemy-run/alchemy/commit/163bdb23)
+  - Allow setting "default" as jurisdiction on d1 &nbsp;-&nbsp; by **Michael K** in https://github.com/alchemy-run/alchemy/issues/1218 [<samp>(f4498)</samp>](https://github.com/alchemy-run/alchemy/commit/f4498823)
+  - Properly export types for worker-loader and workflow &nbsp;-&nbsp; by **Michael K** in https://github.com/alchemy-run/alchemy/issues/1219 [<samp>(af989)</samp>](https://github.com/alchemy-run/alchemy/commit/af989076)
+  - Remove incorrect `observability.logging` key &nbsp;-&nbsp; by **Eric Clemmons** in https://github.com/alchemy-run/alchemy/issues/1221 [<samp>(9b423)</samp>](https://github.com/alchemy-run/alchemy/commit/9b42360e)
+  - Default Container is ./Dockerfile &nbsp;-&nbsp; by **Sam Goodwin** in https://github.com/alchemy-run/alchemy/issues/1214 [<samp>(19138)</samp>](https://github.com/alchemy-run/alchemy/commit/19138f43)
+  - Honor _headers and _redirects files in worker assets &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1223 [<samp>(dc126)</samp>](https://github.com/alchemy-run/alchemy/commit/dc126511)
+- **test**:
+  - Export ./test/bun &nbsp;-&nbsp; by **Sam Goodwin** in https://github.com/alchemy-run/alchemy/issues/1222 [<samp>(102fb)</samp>](https://github.com/alchemy-run/alchemy/commit/102fb86c)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.77.5...v0.78.0)
+
+---
+
 ## v0.77.5
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
