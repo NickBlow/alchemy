@@ -2262,7 +2262,7 @@ describe("Worker Resource", () => {
           persist: true,
         },
         traces: {
-          enabled: true,
+          enabled: false,
           head_sampling_rate: 0.5,
           persist: true,
         },
