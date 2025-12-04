@@ -1,3 +1,15 @@
+## v0.80.0
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **cloudflare**: Worker.DevDomain and Worker.DevUrl &nbsp;-&nbsp; by **Sam Goodwin** in https://github.com/alchemy-run/alchemy/issues/1236 [<samp>(28565)</samp>](https://github.com/alchemy-run/alchemy/commit/28565ac9)
+- **docker**: Support `adopt` for `Container` and `Volume` &nbsp;-&nbsp; by **David Mo** and **Sam Goodwin** in https://github.com/alchemy-run/alchemy/issues/1227 [<samp>(77b40)</samp>](https://github.com/alchemy-run/alchemy/commit/77b40fbf)
+- **neon**: NeonProject supports `adopt` &nbsp;-&nbsp; by **Eric Clemmons** and **John Royal** in https://github.com/alchemy-run/alchemy/issues/1224 [<samp>(0d3cf)</samp>](https://github.com/alchemy-run/alchemy/commit/0d3cf225)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.79.0...v0.80.0)
+
+---
+
 ## v0.79.0
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes

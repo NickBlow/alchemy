@@ -1,5 +1,6 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "alchemy-mono",
@@ -29,7 +30,7 @@
     },
     "alchemy": {
       "name": "alchemy",
-      "version": "0.79.0",
+      "version": "0.80.0",
       "bin": {
         "alchemy": "bin/alchemy.js",
       },
