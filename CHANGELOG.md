@@ -1,3 +1,13 @@
+## v0.80.1
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **cloudflare**: Infer local dev port command or vite.config.ts &nbsp;-&nbsp; by **Sam Goodwin** in https://github.com/alchemy-run/alchemy/issues/1237 [<samp>(2731d)</samp>](https://github.com/alchemy-run/alchemy/commit/2731db03)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.80.0...v0.80.1)
+
+---
+
 ## v0.80.0
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
