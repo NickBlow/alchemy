@@ -19,7 +19,13 @@ import type {
   MultiStepMigration,
   SingleStepMigration,
 } from "./worker-migration.ts";
-import { isWorker, type AssetsConfig, type WorkerProps } from "./worker.ts";
+import { computeWorkerDevDomain } from "./worker-subdomain.ts";
+import {
+  isWorker,
+  Worker,
+  type AssetsConfig,
+  type WorkerProps,
+} from "./worker.ts";
 
 /**
  * Metadata returned by Cloudflare API for a worker script
@@ -426,6 +432,18 @@ export async function prepareWorkerMetadata(
         name: bindingName,
         service: props.workerName,
         entrypoint: binding.__entrypoint__,
+      });
+    } else if (binding.type === "cloudflare::Worker::DevDomain") {
+      meta.bindings.push({
+        type: "plain_text",
+        name: bindingName,
+        text: await computeWorkerDevDomain(api, props.workerName),
+      });
+    } else if (binding.type === "cloudflare::Worker::DevUrl") {
+      meta.bindings.push({
+        type: "plain_text",
+        name: bindingName,
+        text: `https://${await computeWorkerDevDomain(api, props.workerName)}`,
       });
     } else if (binding.type === "d1") {
       meta.bindings.push({

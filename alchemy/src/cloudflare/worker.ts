@@ -809,6 +809,17 @@ export function Worker<const B extends Bindings>(
   return _Worker(id, props as WorkerProps<B>);
 }
 
+export namespace Worker {
+  export type DevDomain = typeof DevDomain;
+  export const DevDomain = {
+    type: "cloudflare::Worker::DevDomain" as const,
+  };
+  export type DevUrl = typeof DevUrl;
+  export const DevUrl = {
+    type: "cloudflare::Worker::DevUrl" as const,
+  };
+}
+
 Worker.experimentalEntrypoint = <RPC extends Rpc.WorkerEntrypointBranded>(
   worker: Worker | WorkerRef | Self,
   entrypoint: string,

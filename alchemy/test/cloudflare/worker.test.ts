@@ -2374,4 +2374,41 @@ describe("Worker Resource", () => {
       await destroy(scope);
     }
   });
+
+  test("create worker with subdomain binding", async (scope) => {
+    const workerName = `${BRANCH_PREFIX}-test-worker-subdomain`;
+
+    let worker: Worker | undefined;
+    try {
+      worker = await Worker(workerName, {
+        name: workerName,
+        adopt: true,
+        script: `
+          export default {
+            async fetch(request, env, ctx) {
+              return Response.json({
+                domain: env.DEV_DOMAIN,
+                url: env.DEV_URL,
+              });
+            }
+          };
+        `,
+        bindings: {
+          DEV_DOMAIN: Worker.DevDomain,
+          DEV_URL: Worker.DevUrl,
+        },
+      });
+
+      const response = await fetchAndExpectOK(worker.url!);
+      const { domain, url } = (await response.json()) as {
+        domain: string;
+        url: string;
+      };
+      expect(`https://${domain}`).toEqual(worker.url);
+      expect(url).toEqual(worker.url);
+    } finally {
+      await destroy(scope);
+      await assertWorkerDoesNotExist(api, workerName);
+    }
+  });
 });

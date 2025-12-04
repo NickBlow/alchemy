@@ -88,17 +88,23 @@ export type Bound<T extends Binding> =
                                                   ? ImagesBinding
                                                   : T extends _VersionMetadata
                                                     ? WorkerVersionMetadata
-                                                    : T extends Self
-                                                      ? Service
-                                                      : T extends Json<infer T>
-                                                        ? T
-                                                        : T extends _Container<
-                                                              infer Obj
+                                                    : T extends
+                                                          | _Worker.DevDomain
+                                                          | _Worker.DevUrl
+                                                      ? string
+                                                      : T extends Self
+                                                        ? Service
+                                                        : T extends Json<
+                                                              infer T
                                                             >
-                                                          ? DurableObjectNamespace<
-                                                              Obj &
-                                                                Rpc.DurableObjectBranded
-                                                            >
-                                                          : T extends undefined
-                                                            ? undefined
-                                                            : Service;
+                                                          ? T
+                                                          : T extends _Container<
+                                                                infer Obj
+                                                              >
+                                                            ? DurableObjectNamespace<
+                                                                Obj &
+                                                                  Rpc.DurableObjectBranded
+                                                              >
+                                                            : T extends undefined
+                                                              ? undefined
+                                                              : Service;
