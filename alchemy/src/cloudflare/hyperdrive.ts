@@ -96,16 +96,38 @@ export interface HyperdriveOriginWithAccess {
   user: string;
 }
 
-/**
- * Caching configuration for Hyperdrive
- */
-export interface HyperdriveCaching {
+export interface HyperdriveCachingEnabled {
   /**
    * Whether caching is disabled
    * @default false
    */
-  disabled?: boolean;
+  disabled?: false;
+  /**
+   * Specify the maximum duration items should persist in the cache. Not returned if set to the default (60).
+   * @default 60
+   */
+  max_age?: number;
+  /**
+   * Specify the number of seconds the cache may serve a stale response. Omitted if set to the default (15).
+   * @default 15
+   */
+  stale_while_revalidate?: number;
 }
+
+export interface HyperdriveCachingDisabled {
+  /**
+   * Whether caching is disabled
+   * @default false
+   */
+  disabled: true;
+}
+
+/**
+ * Caching configuration for Hyperdrive
+ */
+export type HyperdriveCaching =
+  | HyperdriveCachingEnabled
+  | HyperdriveCachingDisabled;
 
 /**
  * mTLS configuration for Hyperdrive
