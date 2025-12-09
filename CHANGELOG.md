@@ -1,3 +1,23 @@
+## v0.81.0
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **cloudflare**:
+  - Add missing cache fields to hyperdrive &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1240 [<samp>(c1c8f)</samp>](https://github.com/alchemy-run/alchemy/commit/c1c8f3f5)
+  - Resources for warp device profiles and CIDR Routes for tunnels &nbsp;-&nbsp; by **Andrew Jefferson** in https://github.com/alchemy-run/alchemy/issues/1243 [<samp>(48731)</samp>](https://github.com/alchemy-run/alchemy/commit/487314aa)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **cloudflare**:
+  - Pass safe user headers to miniflare websocket &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1235 [<samp>(b533a)</samp>](https://github.com/alchemy-run/alchemy/commit/b533ac9a)
+  - Paginate Cloudflare queue lookup &nbsp;-&nbsp; by **Riley Tomasek** and **CharlieHelps** in https://github.com/alchemy-run/alchemy/issues/1245 [<samp>(52a3e)</samp>](https://github.com/alchemy-run/alchemy/commit/52a3e639)
+- **core**:
+  - Ensure root Scope is always root and monorepo improvements &nbsp;-&nbsp; by **Sam Goodwin** in https://github.com/alchemy-run/alchemy/issues/1249 [<samp>(88b73)</samp>](https://github.com/alchemy-run/alchemy/commit/88b738d3)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.80.1...v0.81.0)
+
+---
+
 ## v0.80.1
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
