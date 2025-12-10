@@ -122,7 +122,7 @@ OAuth tokens from `wrangler login` do not support TunnelRoute operations. You mu
 
 ## See Also
 
-- [Tunnel](./tunnel.md) - Create and manage Cloudflare Tunnels
+- [Tunnel](/providers/cloudflare/tunnel) - Create and manage Cloudflare Tunnels
 - [Cloudflare Zero Trust Documentation](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/private-net/)
 - [Cloudflare Tunnel Routes API](https://developers.cloudflare.com/api/operations/zero-trust-networks-routes-create-a-tunnel-route)
 
