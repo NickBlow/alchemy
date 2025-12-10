@@ -1,3 +1,13 @@
+## v0.81.1
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **cloudflare**: Resolve zoneId in RedirectRule and use individual Rule apis &nbsp;-&nbsp; by **Sam Goodwin** in https://github.com/alchemy-run/alchemy/issues/1250 [<samp>(0978c)</samp>](https://github.com/alchemy-run/alchemy/commit/0978cc3e)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.81.0...v0.81.1)
+
+---
+
 ## v0.81.0
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
