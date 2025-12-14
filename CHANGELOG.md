@@ -1,3 +1,20 @@
+## v0.81.2
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **cloudflare**:
+  - Miniflare compatibility date warning &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1256 [<samp>(4992e)</samp>](https://github.com/alchemy-run/alchemy/commit/4992e56d)
+  - Support dev.domain in NextJS &nbsp;-&nbsp; by **Sam Goodwin** in https://github.com/alchemy-run/alchemy/issues/1264 [<samp>(d80a0)</samp>](https://github.com/alchemy-run/alchemy/commit/d80a0ce8)
+  - Handle next.js 16 absolute paths in wasm imports &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1259 [<samp>(5363d)</samp>](https://github.com/alchemy-run/alchemy/commit/5363d641)
+- **core**:
+  - Do not wait for consistent state when destroying &nbsp;-&nbsp; by **Sam Goodwin** in https://github.com/alchemy-run/alchemy/issues/1252 [<samp>(8eae9)</samp>](https://github.com/alchemy-run/alchemy/commit/8eae9c75)
+- **prisma-postgres**:
+  - Properly build `connectionString` &nbsp;-&nbsp; by **Yanqi Zong** in https://github.com/alchemy-run/alchemy/issues/1253 [<samp>(eb4a8)</samp>](https://github.com/alchemy-run/alchemy/commit/eb4a8600)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.81.1...v0.81.2)
+
+---
+
 ## v0.81.1
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
