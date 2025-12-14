@@ -152,7 +152,7 @@ await $`bun install`;
 
 console.log(`Updated version to ${newVersion} in package.json`);
 
-await $`git add package.json alchemy/package.json alchemy/src/cloudflare/compatibility-date.gen.ts bun.lock`;
+await $`git add package.json alchemy/package.json bun.lock`;
 await $`git commit -m "chore(release): ${newVersion}"`;
 await $`git tag v${newVersion}`;
 
