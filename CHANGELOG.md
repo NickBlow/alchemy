@@ -1,3 +1,14 @@
+## v0.81.3
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **cloudflare**: Website resources properly lowercase worker names &nbsp;-&nbsp; by **Michael K** in https://github.com/alchemy-run/alchemy/issues/1268 [<samp>(82834)</samp>](https://github.com/alchemy-run/alchemy/commit/828345c1)
+- **core**: Add missing ".ts" extensions to hey api client &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1269 [<samp>(808c3)</samp>](https://github.com/alchemy-run/alchemy/commit/808c3687)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.81.2...v0.81.3)
+
+---
+
 ## v0.81.2
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
