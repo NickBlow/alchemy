@@ -1,3 +1,17 @@
+## v0.81.4
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **cloudflare**: Add "delete: false" option to hyperdrive &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1276 [<samp>(a5f6a)</samp>](https://github.com/alchemy-run/alchemy/commit/a5f6ad47)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **cli**: Include hyperdrive in generated tokens with workers:* scope &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1275 [<samp>(f6753)</samp>](https://github.com/alchemy-run/alchemy/commit/f67534d5)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.81.3...v0.81.4)
+
+---
+
 ## v0.81.3
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
