@@ -1,3 +1,13 @@
+## v0.82.0
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **neon**: Add support for 'adopt' prop in neon branches &nbsp;-&nbsp; by **utopy** in https://github.com/alchemy-run/alchemy/issues/1273 [<samp>(6c795)</samp>](https://github.com/alchemy-run/alchemy/commit/6c7957a1)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.81.4...v0.82.0)
+
+---
+
 ## v0.81.4
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
