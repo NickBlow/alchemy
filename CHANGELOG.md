@@ -1,3 +1,13 @@
+## v0.82.2
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **state**: Add drizzle-orm as a dependency &nbsp;-&nbsp; by **Sam Goodwin** in https://github.com/alchemy-run/alchemy/issues/1283 [<samp>(aa274)</samp>](https://github.com/alchemy-run/alchemy/commit/aa274e42)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.82.1...v0.82.2)
+
+---
+
 ## v0.82.1
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
