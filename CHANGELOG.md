@@ -1,3 +1,20 @@
+## v0.83.1
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **cloudflare**: Add dev.remote option to Hyperdrive &nbsp;-&nbsp; by **Yanqi Zong** in https://github.com/alchemy-run/alchemy/issues/1291 [<samp>(dc335)</samp>](https://github.com/alchemy-run/alchemy/commit/dc33580e)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- Upgrade to libsodium-wrappers@0.8.0 &nbsp;-&nbsp; by **Sam Goodwin** [<samp>(eb199)</samp>](https://github.com/alchemy-run/alchemy/commit/eb199e27)
+- **cloudflare**:
+  - Remove OAuth error interception in Cloudflare API error handling &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1296 [<samp>(46fe1)</samp>](https://github.com/alchemy-run/alchemy/commit/46fe17d6)
+  - Update detection of "durable object already has application" error &nbsp;-&nbsp; by **John Royal** in https://github.com/alchemy-run/alchemy/issues/1298 [<samp>(a8996)</samp>](https://github.com/alchemy-run/alchemy/commit/a8996eed)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/alchemy-run/alchemy/compare/v0.83.0...v0.83.1)
+
+---
+
 ## v0.83.0
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
